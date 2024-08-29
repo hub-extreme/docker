@@ -1,0 +1,60 @@
+project 1 :
+
+install mysql using docker-compose :
+
+step 1 :
+u need to write docker-compose file.....
+
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: devops
+      MYSQL_USER: inn1
+      MYSQL_PASSWORD: pass123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+
+step2:
+
+sudo docker-compose up -d
+
+
+step 3:
+
+check mysql container is up or not using (sudo docker ps)
+
+if up then ,
+
+sudo docker exec -it containerid  sh
+
+>>  mysql -u inn1 -p
+
+password:pass123
+
+mysql :
+
+use mydb
+
+(mydb is a databasename) u can give any name
+
+database changed....
+
+# create table emp(id int,name char(10));
+
+#insert into emp values(1,'sumit');
+
+#select * from emp;
+
+id  name
+1   Yuvraj
