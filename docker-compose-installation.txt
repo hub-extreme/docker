@@ -1,5 +1,5 @@
 for installing docker-compose :
 
-1)sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.7/docker-compose-windows-x86_64.exe -o /usr/local/bin/docker-compose
+1)sudo curl -L "https://github.com/docker/compose/releases/download/v2.29.7/docker-compose-windows-x86_64.exe -o /usr/local/bin/docker-compose"
 
 2)sudo chmod +x /usr/local/bin/docker-compose
