@@ -2,7 +2,7 @@ sudo apt-get update
 sudo apt-get install curl
 sudo curl -fsSl https://get.docker.com/ | sh
 sudo usermod -aG docker ubuntu
-sudo docker --version   
+sudo docker --version  #checks docker version. 
 
 
 #docker-compose installation
